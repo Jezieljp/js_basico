@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Metodos de Arrays</title>
+
+</head>
+
+<body>
+    <h1>Metodos de Arrays</h1>
+
+    <h2>Concat</h2>
+    <script>
+        //metodo concat
+        var arr1 = new Array("red", 10, 23.6);
+        var arr2 = Array("red", 10, 23.6, arr1);
+        arr1 = arr1.concat(arr2);
+
+        document.write("<p>concat(): " + arr1.length + "</p>");
+
+        console.log("concat() : ");
+        console.log(arr1);
+
+    </script>
+
+        <h2>Join</h2>
+    <script>
+        //metodo Join separa os arrays com um -
+        var arr1 = new Array("red", 10, 23.6);
+        var arr2 = Array("red", 10, 23.6, arr1);
+        arr1 = arr1.concat(arr2);
+
+        var list = arr1.join(" - ");
+
+        document.write("<p>join(): " + list + "</p>");
+
+        console.log("join() : ");
+        console.log(list);
+
+    </script>
+
+<h2>Push</h2>
+<script>
+        //metodo push adiciona um elemento
+        var arr3 = new Array("red", 10, 23.6);       
+        arr3.push("New Element");
+        var list = arr3.join(" - ");
+        document.write("<p>push() : " + arr3 + "</p>");
+
+        console.log("push() : ");
+        console.log(arr3);
+
+    </script>
+
+<h2>Pop</h2>
+<script>
+        //metodo pop remove o ultimo elemento              
+        arr3.pop();
+        var list = arr3.join(" - ");
+        document.write("<p>pop() : " + arr3 + "</p>");
+        console.log("pop() : ");
+        console.log(arr3);
+
+    </script>
+
+</body>
+
+</html>
